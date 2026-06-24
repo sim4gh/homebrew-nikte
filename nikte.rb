@@ -5,21 +5,21 @@
 class Nikte < Formula
   desc "Fast CLI for ephemeral content management"
   homepage "https://github.com/sim4gh/nikte-cli"
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sim4gh/nikte-cli/releases/download/v0.8.0/nikte-cli_0.8.0_darwin_amd64.tar.gz"
-      sha256 "c220f0513ace5f37682a06f5f78f2fdbbd13fb55b6ba8dae175ac08bd41f5a46"
+      url "https://github.com/sim4gh/nikte-cli/releases/download/v0.8.1/nikte-cli_0.8.1_darwin_amd64.tar.gz"
+      sha256 "4f06aaf5e04b6457e00bf941b82caec163e61e39bd8bbacb4d93181ba22e023f"
 
       define_method(:install) do
         bin.install "nk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sim4gh/nikte-cli/releases/download/v0.8.0/nikte-cli_0.8.0_darwin_arm64.tar.gz"
-      sha256 "f81496c1f333290d5141e3d01ed1d9778073da5887d43bb076c52e40022cc3d0"
+      url "https://github.com/sim4gh/nikte-cli/releases/download/v0.8.1/nikte-cli_0.8.1_darwin_arm64.tar.gz"
+      sha256 "446721421826ff25ef484dc6034532842bb8ccaaa3e23281af400a4528f10164"
 
       define_method(:install) do
         bin.install "nk"
@@ -29,15 +29,15 @@ class Nikte < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sim4gh/nikte-cli/releases/download/v0.8.0/nikte-cli_0.8.0_linux_amd64.tar.gz"
-      sha256 "95e64585c28c9db134283ba8df6cb532ac62eba1e50943e97b1e50578e7f7b1e"
+      url "https://github.com/sim4gh/nikte-cli/releases/download/v0.8.1/nikte-cli_0.8.1_linux_amd64.tar.gz"
+      sha256 "2347fc1de2536273befd19dfc799b1c0f06be28e2f8afa59a6f72d7413ce9fd4"
       define_method(:install) do
         bin.install "nk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sim4gh/nikte-cli/releases/download/v0.8.0/nikte-cli_0.8.0_linux_arm64.tar.gz"
-      sha256 "ffa4538665a65001cedae4738b833bcf9db0d2aeab22b4ec1675978445970dbf"
+      url "https://github.com/sim4gh/nikte-cli/releases/download/v0.8.1/nikte-cli_0.8.1_linux_arm64.tar.gz"
+      sha256 "54aa3ff06aa9550e320c93225bd20bbc6303c9c43432255f8680a319e5ea8800"
       define_method(:install) do
         bin.install "nk"
       end
